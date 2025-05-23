@@ -27,7 +27,7 @@ export default function SearchBox() {
         } else {
             router.push('/')
         }
-    })
+    }, [debouncedSearch, router]); 
 
   return (
     <>
