@@ -23,8 +23,8 @@ type EditPostFormProps = {
 }
 
 export default function EditPostForm({post}: EditPostFormProps) {
-    const [content, setContent] = useState('')
-    const [contentLength, setContentLength] = useState(0)
+    const [content, setContent] = useState(post.content)
+    const [contentLength, setContentLength] = useState(post.content.length)
     const [preview, setPreview] = useState(false)
     const [title, setTitle] = useState(post.title)
     const [published, setPublished] = useState(post.published)

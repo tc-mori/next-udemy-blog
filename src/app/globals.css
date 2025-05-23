@@ -120,3 +120,12 @@
     @apply bg-background text-foreground;
   }
 }
+
+table th { /*table内のtdに対して*/
+  padding: 3px 10px;/*上下3pxで左右10px*/
+  border: solid 1px black;
+}
+
+table td {
+  border: solid 1px black;
+}
